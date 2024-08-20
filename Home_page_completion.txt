@@ -1,0 +1,12 @@
+header
+navigation bar
+slide bar
+tiles under the slidebar
+About Us
+Under the about us and above the Our services
+Our services
+Book a service and background video
+Our Technitians
+Our Clients Say
+Footer
+Add Whatsapp
