@@ -18,6 +18,20 @@
     z-index: 99;
 }
 
+/***** variables***/
+.companyName::before {
+    content: "Tharanga";   
+}
+.companyAddress::before {
+    content: "6 Peperina Pl, Carlingford, NSW";   
+}
+.companyContactNo::before {
+    content: "041 514 2242";   
+}
+.companyEmail::before {
+    content: "tharanga@gmail.com";   
+}
+
 
 /*** Spinner ***/
 #spinner {
