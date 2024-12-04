@@ -14,22 +14,22 @@
     position: fixed;
     display: none;
     right: 45px;
-    bottom: 45px;
+    bottom: 105px;
     z-index: 99;
 }
 
 /***** variables***/
 .companyName::before {
-    content: "Tharanga";   
+    content: "Taash Cleaning";   
 }
-.companyAddress::before {
-    content: "6 Peperina Pl, Carlingford, NSW";   
-}
+/* .companyAddress::before {
+    content: "";   
+} */
 .companyContactNo::before {
     content: "041 514 2242";   
 }
 .companyEmail::before {
-    content: "tharanga@gmail.com";   
+    content: "bandara.t.r@gmail.com";   
 }
 
 
@@ -598,4 +598,83 @@
 
 .footer .copyright a {
     color: var(--light);
+}
+
+/*** star marks ***/
+.star-rating {
+    font-size: 24px;
+}
+
+.star-rating i {
+    margin: 0 2px;
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}
+
+
+/* WhatsApp Chat Widget Styles */
+.whatsapp-chat {
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    z-index: 999;
+}
+
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: #ffffff;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    transform: scale(1.05);
+}
+
+.whatsapp-button i {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.whatsapp-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Animation for the button */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.whatsapp-button {
+    animation: pulse 2s infinite;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .whatsapp-text {
+        display: none;
+    }
+    
+    .whatsapp-button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 0;
+        justify-content: center;
+    }
+    
+    .whatsapp-button i {
+        margin: 0;
+    }
 }
