@@ -170,6 +170,25 @@
             }
         }
     });
+
+    // star
+    // Star Rating Animation
+    $('.star-rating').each(function() {
+        const $stars = $(this).find('i');
+        $stars.each(function(index) {
+            $(this).delay(index * 200).fadeIn(500);
+        });
+    });
+
+    // Optional: Add hover effect
+    $('.star-rating i').hover(
+        function() {
+            $(this).addClass('fa-bounce');
+        },
+        function() {
+            $(this).removeClass('fa-bounce');
+        }
+    );
     
 })(jQuery);
 
